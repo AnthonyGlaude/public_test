@@ -50,3 +50,72 @@
 - `echo "Texte" > <fichier>` : Écrire du texte dans un fichier (écrase le contenu existant).
 - `echo "Texte" >> <fichier>` : Ajouter du texte à la fin d'un fichier (sans écraser le contenu existant).
 # public_test# public_test
+
+
+# Le repertoire sert à connaitre les bases de GitHub
+
+# Commandes Git
+
+## Commandes de Base
+
+### Configuration Initiale
+- `git config --global user.name "Ton Nom"` : Définit ton nom d'utilisateur.
+- `git config --global user.email "ton.email@example.com"` : Définit ton adresse e-mail.
+
+### Gestion des Dépôts
+- `git init` : Initialise un nouveau dépôt Git dans le répertoire actuel.
+- `git clone <URL>` : Clone un dépôt distant sur ta machine locale.
+
+### États et Informations
+- `git status` : Affiche l'état des fichiers dans le répertoire de travail.
+- `git log` : Affiche l'historique des commits.
+- `git diff` : Montre les différences entre les fichiers modifiés et les fichiers dans l'index.
+
+### Gestion des Fichiers
+- `git add <fichier>` : Ajoute des fichiers spécifiques à l'index (prépare les fichiers pour le commit).
+- `git add .` : Ajoute tous les fichiers modifiés et nouveaux à l'index.
+- `git rm <fichier>` : Supprime des fichiers du répertoire de travail et de l'index.
+
+### Commits
+- `git commit -m "Message"` : Crée un commit avec un message descriptif.
+- `git commit --amend` : Modifie le dernier commit (ajoute des changements ou change le message).
+
+### Pousser et Tirer
+- `git push origin <branche>` : Envoie les commits de ta branche locale vers la branche distante spécifiée.
+- `git pull origin <branche>` : Récupère les changements de la branche distante et les fusionne avec ta branche locale.
+
+### Gestion des Branches
+- `git branch` : Liste les branches locales.
+- `git branch <nom>` : Crée une nouvelle branche.
+- `git checkout <nom>` : Change de branche.
+- `git checkout -b <nom>` : Crée une nouvelle branche et change pour cette branche.
+- `git merge <branche>` : Fusionne une branche avec la branche actuelle.
+- `git branch -d <nom>` : Supprime une branche locale.
+
+### Gestion des Dépôts Distants
+- `git remote -v` : Affiche les dépôts distants configurés.
+- `git remote add <nom> <URL>` : Ajoute un nouveau dépôt distant.
+- `git remote remove <nom>` : Supprime un dépôt distant.
+
+### Réinitialisation et Rebasage
+- `git reset <fichier>` : Annule les modifications dans un fichier depuis le dernier commit.
+- `git reset --hard <commit>` : Réinitialise le dépôt au commit spécifié (attention, cela supprime les changements non commités).
+- `git rebase <branche>` : Rebase la branche actuelle sur une autre branche (utile pour réécrire l'historique).
+
+## Commandes Avancées
+
+### Gestion des Tags
+- `git tag` : Liste les tags.
+- `git tag <nom>` : Crée un tag.
+
+### Gestion des Conflits
+- `git status` : Utile pour identifier les fichiers en conflit.
+- `git mergetool` : Lance un outil de fusion pour résoudre les conflits.
+
+### Stashing
+- `git stash` : Met de côté les modifications non commités.
+- `git stash pop` : Récupère les modifications mises de côté avec `git stash`.
+
+### Rechercher
+- `git grep <motif>` : Recherche un motif dans les fichiers du dépôt.
+
