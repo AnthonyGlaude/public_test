@@ -1,4 +1,4 @@
-### Navigation dans les Répertoires.
+### Navigation dans les Répertoires..
 - `cd <répertoire>` : Aller dans le répertoire spécifié.
 - `cd ..` : Revenir au répertoire parent.
 - `pwd` : Afficher le chemin du répertoire courant.
